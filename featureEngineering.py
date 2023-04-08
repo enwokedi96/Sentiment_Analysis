@@ -1,6 +1,6 @@
 from sklearn.feature_extraction.text import CountVectorizer
 from preprocessing import load_data 
-import tarfile
+import tarfile, pickle
 
 # open file 
 # file = tarfile.open('C:/Users/admin/Documents/pythonDevs/aclImdb_v1.tar.gz')
@@ -14,3 +14,7 @@ vectorizer = CountVectorizer()
 df = load_data(path=r"C:/Users/admin/Documents/pythonDevs/Sentiment_Analysus/aclImdb/train/")
 X = vectorizer.fit_transform(df['text'])
 y = df['label']
+
+vectorName = r'C:/Users/admin/Documents/pythonDevs/Sentiment_Analysus/vectorizer.sav'
+
+pickle.dump(vectorizer, open(vectorName, 'wb'))
