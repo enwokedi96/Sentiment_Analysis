@@ -2,9 +2,18 @@
 <html>
     <head>
         <title>Sentiment Analysis App</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
     </head>
     <body>
-        <h1>Result</h1>
-        <p>The sentiment of the input text is {{ result }}.</p>
+        <h3 class="heading">Result</h3>
+        <div class="container_2">
+            <p class="result">The sentiment of the input text is <span>{{ result }}</span>.</p>
+            <a href="/" onclick="goToHome()" class="button">Click To Try Again</a>
+        </div>
     </body>
+    <script>
+        function goToHome() {
+          window.location.href = "home.html";
+        }
+    </script>
 </html>
