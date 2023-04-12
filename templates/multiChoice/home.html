@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Sentiment Analysis App</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="carousel">
+            <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="">
+          </div>
+        <h1 class="heading">Sentiment Analysis App</h1>
+        <form action="/predict" method="POST">
+            <label for="text">Enter your review:</label>
+            <textarea id="text" name="text" rows="3" required></textarea>
+            <button type="submit" class="button" value="Predict">Analyze</button>
+        </form>
+    </body>
+
+    <script>
+        var elem = document.querySelector('.carousel');
+        var flkty = new Flickity( elem, {
+          // options
+          autoPlay: true,
+          wrapAround: true
+        });
+      </script>
+
+</html>
