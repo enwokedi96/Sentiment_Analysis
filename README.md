@@ -2,9 +2,9 @@
 
 Utilizes pretrained naive Bayes and SVM model(s) to classify the sentiment of a comment into positive or neggative. 
 
-## Deployed 
+[comment]: ## Deployed 
 
-http://israel96.pythonanywhere.com/
+[comment]: (http://israel96.pythonanywhere.com/)
 
 ## CITATION FOR DATASET
 
