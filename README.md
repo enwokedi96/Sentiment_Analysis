@@ -1,8 +1,8 @@
 # Sentiment_Analysis
 
-Utilizes pretrained naive Bayes and SVM model(s) to classify the sentiment of a comment into positive or neggative. 
+Utilizes pre-trained naive Bayes and SVM model(s) to classify the sentiment of a comment into positive or negative. 
 
-[comment]: ## Deployed 
+[comment]: Deployed 
 
 [comment]: (http://israel96.pythonanywhere.com/)
 
